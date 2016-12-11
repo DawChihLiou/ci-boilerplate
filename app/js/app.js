@@ -1,7 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
+import Test from './components/Test'
 
 render (
-  <h1>Hello there. What's up!!</h1>,
+  <Test text="Hi there. What's up!"/>,
   document.getElementById('root')
 )
