@@ -1,9 +1,9 @@
 import React from 'react'
-import Test from './components/Test'
+import Test from '../common/components/Test'
 
 const Home = () => (
-  <div>
-    <h1 className="text-center">This is Home View.</h1>
+  <div className="text-center">
+    <h1>This is Home View.</h1>
     <Test />
   </div>
 )

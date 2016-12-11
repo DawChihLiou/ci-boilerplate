@@ -1,7 +1,11 @@
 import React from 'react'
+import Test from '../common/components/Test'
 
 const About = () => (
-  <h1>This is About View</h1>
+  <div className="text-center">
+    <h1>This is About View</h1>
+    <Test />
+  </div>
 )
 
 export default About
