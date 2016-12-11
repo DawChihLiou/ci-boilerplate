@@ -1,8 +1,13 @@
 import React from 'react'
-import { render } from 'react-dom'
-import Test from './components/Test'
+import { Link } from 'react-router'
 
-render (
-  <Test text="Hi there. What's up!"/>,
-  document.getElementById('root')
+const App = ({ children }) => (
+  <div>
+    <Link to="/">Home</Link>
+    <Link to="/about">about</Link>
+
+    {children}
+  </div>
 )
+
+export default App
