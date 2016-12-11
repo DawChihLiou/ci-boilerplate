@@ -1,0 +1,30 @@
+{
+  "name": "ci-boilerplate",
+  "version": "1.0.0",
+  "description": "Continuous integration with Trevis CI and good friends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DawChihLiou/ci-boilerplate.git"
+  },
+  "keywords": [
+    "trevis",
+    "jest",
+    "react",
+    "redux",
+    "ci"
+  ],
+  "author": "Daw-Chih Liou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DawChihLiou/ci-boilerplate/issues"
+  },
+  "homepage": "https://github.com/DawChihLiou/ci-boilerplate#readme",
+  "devDependencies": {
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
