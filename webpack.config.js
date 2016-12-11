@@ -1,3 +1,6 @@
+const precss = require('precss');
+const autoprefixer = require('autoprefixer');
+
 module.exports = {
   context: __dirname + '/app',
   entry: {
@@ -23,8 +26,11 @@ module.exports = {
         loader: 'file?name=[name].[ext]'
       }, {
         test: /\.s[ac]ss$/,
-        loader: 'style!css?sourceMap!sass?sourceMap'
+        loader: 'style!css?sourceMap!postcss!sass?sourceMap'
       }
     ]
+  },
+  postcss() {
+    return [autoprefixer, precss];
   }
 };
