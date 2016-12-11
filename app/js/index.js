@@ -11,6 +11,8 @@ import App from './app'
 import Home from './home'
 import About from './about'
 
+import '../sass/index.sass'
+
 render (
   <Router history={ browserHistory }>
     <Route path="/" component={ App }>
