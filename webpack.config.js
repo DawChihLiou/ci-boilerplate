@@ -11,6 +11,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx', '.json']
   },
+  devtool: 'inline-source-map',
   module: {
     loaders: [
       {
@@ -20,6 +21,9 @@ module.exports = {
       }, {
         test: /\.html$/,
         loader: 'file?name=[name].[ext]'
+      }, {
+        test: /\.s[ac]ss$/,
+        loader: 'style!css?sourceMap!sass?sourceMap'
       }
     ]
   }
