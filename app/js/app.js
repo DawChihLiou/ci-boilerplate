@@ -7,7 +7,6 @@ const App = ({ children }) => (
     <Link to="/">Home</Link>
     <br/>
     <Link to="/about">about</Link>
-
     {children}
   </div>
 )
