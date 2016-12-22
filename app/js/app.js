@@ -6,7 +6,7 @@ const App = ({ children }) => (
   <div>
     <Link to="/">Home</Link>
     <br/>
-    <Link to="/about">about</Link>
+    <Link to="/about">About</Link>
     {children}
   </div>
 )

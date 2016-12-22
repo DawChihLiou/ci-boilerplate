@@ -1,5 +1,5 @@
 import React from 'react'
-import Test from '../common/components/Test'
+import Test from '../common/Test'
 
 const About = () => (
   <div className="text-center">

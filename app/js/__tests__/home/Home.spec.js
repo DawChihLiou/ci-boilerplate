@@ -2,7 +2,7 @@ import React from 'react';
 import Home from '../../home';
 import { shallow } from 'enzyme';
 
-describe('Home component', () => {
+describe('<Home />', () => {
   const home = shallow(<Home />);
 
   it('should have one header', () => {

@@ -61,6 +61,17 @@
     "redux": "^3.6.0"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "app/js/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+	"branches": 100,
+	"functions": 100,
+	"lines": 100,
+	"statements": 100
+      }
+    }
   }
 }
