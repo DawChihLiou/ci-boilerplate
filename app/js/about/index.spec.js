@@ -1,5 +1,5 @@
 import React from 'react';
-import About from '../../about';
+import About from './index';
 import { shallow } from 'enzyme';
 
 describe('<About />', () => {
@@ -9,4 +9,3 @@ describe('<About />', () => {
     expect(about.find('h1').length).toBe(1);
   });
 });
-
