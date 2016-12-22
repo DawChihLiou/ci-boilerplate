@@ -6,7 +6,7 @@ import {
   browserHistory
 } from 'react-router'
 
-import App from './app'
+import App from './App'
 import Home from './home'
 import About from './about'
 

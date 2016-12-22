@@ -13,11 +13,15 @@
     "url": "git+https://github.com/DawChihLiou/ci-boilerplate.git"
   },
   "keywords": [
-    "trevis",
+    "travis",
     "jest",
     "react",
     "redux",
-    "ci"
+    "ci",
+    "jest",
+    "immutable",
+    "react-router",
+    "sass"
   ],
   "author": "Daw-Chih Liou",
   "license": "MIT",

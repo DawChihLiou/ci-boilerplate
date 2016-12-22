@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import createLogger from 'redux-logger'
 import reducer from './reducer'
-import AppRouter from './router'
+import AppRouter from './AppRouter'
 
 const logger = createLogger()
 
@@ -16,7 +16,7 @@ const configureStore = () => {
 }
 
 const store = configureStore()
-  
+
 render (
   <Provider store={ store }>
     <AppRouter />
