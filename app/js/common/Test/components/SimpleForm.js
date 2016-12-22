@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react';
 
 const SimpleForm = ({ text, onSubmit }) => (
-  <from onSubmit={ (e) => onSubmit(e) }>
-    <inputplaceholder="type something and press enter ..." />
+  <form onSubmit={ (e) => onSubmit(e) }>
+    <input placeholder="type something and press enter ..." />
     <h3>{ text }</h3>
-  </div>
+  </form>
 )
 
 SimpleForm.propTypes = {
