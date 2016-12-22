@@ -1,24 +1,25 @@
 import React from 'react'
 import { render } from 'react-dom'
-import {
-  Router,
-  Route,
-  IndexRoute,
-  browserHistory
-} from 'react-router'
+import { Provider } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux'
+import createLogger from 'redux-logger'
+import reducer from './reducer'
+import AppRouter from './router'
 
-import App from './app'
-import Home from './home'
-import About from './about'
+const logger = createLogger()
 
-import '../sass/index.sass'
+const configureStore = () => {
+  return createStore(
+    reducer,
+    applyMiddleware(logger)
+  )
+}
 
+const store = configureStore()
+  
 render (
-  <Router history={ browserHistory }>
-    <Route path="/" component={ App }>
-      <IndexRoute component={ Home } />
-      <Route path="about" component={ About } />
-    </Route>
-  </Router>,
+  <Provider store={ store }>
+    <AppRouter />
+  </Provider>,
   document.getElementById('root')
 )

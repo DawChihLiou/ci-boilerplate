@@ -7,8 +7,10 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  onSubmit: (e) => {
-    dispatch(updateText(e))
+  onChange: (e) => {
+    e.preventDefault()
+    console.log(e.target)
+    dispatch(updateText(e.target.value))
   }
 })
 
